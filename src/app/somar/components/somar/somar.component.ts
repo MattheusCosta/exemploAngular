@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { SomarService } from '../../services';
 
 @Component({
   selector: 'app-somar',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SomarComponent implements OnInit {
 
-  constructor() { }
+  constructor(somarService: SomarService) { }
 
   ngOnInit() {
   }

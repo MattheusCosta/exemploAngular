@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { SomarComponent } from './components/somar';
+import { SomarService } from './services';
 
 
 
@@ -11,6 +12,9 @@ import { SomarComponent } from './components/somar';
   ],
   exports: [
     SomarComponent
+  ],
+  providers: [
+    SomarService
   ]
 })
 

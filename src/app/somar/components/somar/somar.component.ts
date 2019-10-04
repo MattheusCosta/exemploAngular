@@ -8,9 +8,19 @@ import { SomarService } from '../../services';
 })
 export class SomarComponent implements OnInit {
 
-  constructor(somarService: SomarService) { }
+  constructor(private somarService: SomarService) { }
+  private valor:number;
 
   ngOnInit() {
+    this.valor = 0;
+  }
+
+  calcula(valorRecebido:number) : number{
+    return this.somarService.somar(this.valor,valorRecebido);
+  }
+
+  get pegarValor(){
+    return this.valor;
   }
 
 }
